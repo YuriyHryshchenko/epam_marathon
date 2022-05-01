@@ -7,7 +7,7 @@
                         margin-right: 30px;
                     }
                     .footer {
-                        padding-top: 95px;
+                        padding-top: 27px;
                     }
                 }
                 
@@ -26,9 +26,7 @@
                         position: absolute;
                     }
                     .registration-form-image-wrapper {
-                        /*display:none;*/
-                        position: relative;
-                        left: 50%;
+                        margin-left: 200px;
                     }
                     .registration-form-wrapper {
                         justify-content: center;
