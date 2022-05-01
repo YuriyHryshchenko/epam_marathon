@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Space</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-bar secondary-text">
+            <div class="nav-bar-wrapper">
+                <div class="nav-logo-wrapper">
+                    <a href="#"><i class="nav-logo"></i></a>
+                    <span class="nav-title">My Space</span>
+                </div>
+                <div class="nav-menu-wrapper" id="menu">
+                    <span class="nav-menu-item">Про нас</span>
+                    <span class="nav-menu-item">Новини</span>
+                    <span class="nav-menu-item">Блог</span>
+                    <i class="nav-menu-icon"></i>
+                </div>
+                <div class="menu-button" id="burger-menu">
+                    <span></span>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <div class="page-wrapper">
+        <section class="registration-section">
+            <div class="registration-form-wrapper">
+                <div class="registration-form-image-wrapper">
+                    <img src="img/Uran.svg" alt="Planet" id="planet-img" class="registration-form-image">
+                </div>
+                <div class="form-card flex-column">
+                    <div class="form-wrapper">
+                        <h2 class="form-title">Електронна черга для польоту у космос</h2>
+                        <form action="submit" class="registration-form flex-column">
+                            <label for="name" class="form-label">Ім'я</label>
+                            <input type="text" class="form-input" id="name" name="name" placeholder="Введіть ім'я" required>
+
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input class="form-input" type="tel" id="phone" name="phone" pattern="[\+]\d{2}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" placeholder="+38 (066) 666-66-66" required>
+
+                            <label for="select" class="form-label">Планета</label>
+                            <select name="select" id="select" class="form-input form-input-select" required>
+										 <option value="venus" disabled>Венера</option>
+										 <option value="earth" disabled>Земля</option>
+										 <option value="mars" disabled>Марс</option>
+										 <option value="mercury">Меркурій</option>
+										 <option value="neptune" disabled>Нептун</option>
+										 <option value="uranus" selected>Уран</option>
+									 </select>
+                            <button class="form-submit-button" type="submit">Зареєструватися</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="footer secondary-text">
+        © 2022 My Space. Всі права захищені.
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
