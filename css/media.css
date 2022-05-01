@@ -20,22 +20,24 @@
                 }
                 
                 @media (max-width: 900px) {
-                    .form-card {
-                        z-index: 5;
-                        height: 540px;
+                    .registration-form-image-wrapper {
                         position: absolute;
+                        margin-top: 300px;
+                        height: 390px;
                     }
-                    .registration-form-image {
-                        /*display:none;*/
+                    .footer {
+                        margin-top: 110px;
                     }
                     .registration-form-wrapper {
                         justify-content: center;
                         overflow: hidden;
                     }
                     .form-card {
+                        height: 540px;
                         margin: 0 15px;
                         min-width: 345px;
                         z-index: 90;
+                        position: relative;
                     }
                     .form-submit-button {
                         width: 280px;
